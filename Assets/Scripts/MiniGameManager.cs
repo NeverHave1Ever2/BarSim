@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MiniGameManager : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class MiniGameManager : MonoBehaviour
     void Start()
     {
         
+        SceneManager.LoadScene("MGScene", LoadSceneMode.Additive);
     }
 
     // Update is called once per frame
