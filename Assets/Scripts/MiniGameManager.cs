@@ -20,7 +20,7 @@ public class MiniGameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape) && MGPlaying)
         {
             MGPlaying = false;
-            SceneManager.UnloadSceneAsync("MGScene");
+            SceneManager.UnloadSceneAsync("MGScene1");
             player.SetActive(true);
         }
 
@@ -31,7 +31,7 @@ public class MiniGameManager : MonoBehaviour
     {
         Debug.Log("loading");
         MGPlaying = true;
-        SceneManager.LoadScene("MGScene", LoadSceneMode.Additive);
+        SceneManager.LoadScene("MGScene" + minigameCode, LoadSceneMode.Additive);
         player.SetActive(false);
     }
 }
