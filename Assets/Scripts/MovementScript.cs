@@ -38,4 +38,13 @@ public class MovementScript : MonoBehaviour
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
     }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("hi");
+            other.SendMessageUpwards("minigameLoad", 1);
+        }
+    }
 }
