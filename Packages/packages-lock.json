@@ -1,5 +1,14 @@
 {
   "dependencies": {
+    "com.leloctai.piss-stream": {
+      "version": "https://github.com/LeLocTai/pISSStreamUnity.git#master",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.editorcoroutines": "1.0.0"
+      },
+      "hash": "12c2a19e406018ebd866997d34c612981ebcd69e"
+    },
     "com.unity.2d.animation": {
       "version": "10.1.4",
       "depth": 1,
@@ -14,8 +23,8 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.2d.aseprite": {
-      "version": "1.1.7",
-      "depth": 1,
+      "version": "1.1.8",
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.2d.common": "6.0.6",
@@ -27,14 +36,14 @@
     },
     "com.unity.2d.common": {
       "version": "9.0.7",
-      "depth": 2,
+      "depth": 1,
       "source": "registry",
       "dependencies": {
+        "com.unity.burst": "1.8.4",
         "com.unity.2d.sprite": "1.0.0",
         "com.unity.mathematics": "1.1.0",
-        "com.unity.modules.uielements": "1.0.0",
         "com.unity.modules.animation": "1.0.0",
-        "com.unity.burst": "1.8.4"
+        "com.unity.modules.uielements": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
@@ -130,6 +139,13 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.editorcoroutines": {
+      "version": "1.0.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.ext.nunit": {
       "version": "2.0.5",
       "depth": 1,
@@ -181,7 +197,7 @@
     },
     "com.unity.mathematics": {
       "version": "1.3.2",
-      "depth": 2,
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"

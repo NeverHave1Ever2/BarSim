@@ -22,5 +22,4 @@ public class BeerMinigameInteraction : MonoBehaviour
             progressBar.value += 1;
         }
     }
-    
 }
