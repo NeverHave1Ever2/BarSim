@@ -23,7 +23,6 @@ public class CameraController : MonoBehaviour
 
         if(playerCheck.gameObject == cameraTarget)
         {
-            Debug.Log("sigma");
             camera.transform.position = cameraPosition.transform.position;
         }
         else
